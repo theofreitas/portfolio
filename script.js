@@ -37,7 +37,6 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 });
 
 // Add scroll effect to navbar
-let lastScroll = 0;
 const navbar = document.querySelector('.navbar');
 
 window.addEventListener('scroll', function() {
@@ -48,6 +47,4 @@ window.addEventListener('scroll', function() {
     } else {
         navbar.style.boxShadow = '0 4px 20px rgba(0, 0, 0, 0.15)';
     }
-    
-    lastScroll = currentScroll;
 });
